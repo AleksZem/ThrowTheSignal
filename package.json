@@ -1,0 +1,32 @@
+{
+  "name": "throwthesignal",
+  "version": "1.0.0",
+  "description": "CS484 Personal Project, social group based notification web service.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AleksZem/ThrowTheSignal.git"
+  },
+  "author": "Aleks Zemlyanskiy",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AleksZem/ThrowTheSignal/issues"
+  },
+  "homepage": "https://github.com/AleksZem/ThrowTheSignal#readme",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "jsonwebtoken": "^8.4.0",
+    "mongoose": "^5.3.13",
+    "passport": "^0.4.0",
+    "passport-jwt": "^4.0.0",
+    "validator": "^10.9.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.6"
+  }
+}
