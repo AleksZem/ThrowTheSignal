@@ -1,4 +1,4 @@
-package com.aleks.throwthesignal.throwthesignal;
+package com.test.aleks.throwthesignal;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;
@@ -21,6 +21,6 @@ public class ExampleInstrumentedTest {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getTargetContext();
 
-        assertEquals("com.aleks.throwthesignal.throwthesignal", appContext.getPackageName());
+        assertEquals("com.test.aleks.throwthesignal", appContext.getPackageName());
     }
 }

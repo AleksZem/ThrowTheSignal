@@ -1,4 +1,4 @@
-package com.aleks.throwthesignal.throwthesignal;
+package com.test.aleks.throwthesignal;
 
 import org.junit.Test;
 
