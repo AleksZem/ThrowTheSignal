@@ -14,6 +14,8 @@ firebaseAdmin.initializeApp({
   databaseURL: keys.firebaseDatabaseURI
 });
 
+//////////////FIREBASE
+
 // @route   GET api/users/test
 // @desc    Tests users route
 // @access  Public
@@ -58,5 +60,22 @@ router.post(
 // @access  Private
 
 //Post a message to a group for which the user is a member
+router.post("/send/:group_id", (req, res) => {
+  //Dummy route
+  firebaseAdmin
+    .messaging()
+    .send({
+      notification: {
+        title: req.body.title,
+        body: req.body.content
+      },
+      token:
+        "cxehGhmpp4M:APA91bF2lie3MSgfTIuSf1NxrfKQylkh7yNlt3V-mSlS-2hEqFeL6MiyDNhUgTzffR6wGnCFMRLyQWdS3MS4o7qKFM46McVpDl57X2_GmnjtgH9fRWp4F-akYBfxSL4d9Ln8JI9_wwuN"
+    })
+    .then(response => {
+      console.log(response);
+    })
+    .catch(err => console.log(err));
+});
 
 module.exports = router;
